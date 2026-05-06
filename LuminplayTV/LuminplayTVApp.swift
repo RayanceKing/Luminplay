@@ -2,12 +2,12 @@ import LuminplayCore
 import SwiftUI
 
 @main
-struct LuminplayApp: App {
+struct LuminplayTVApp: App {
     @StateObject private var store = LuminplayStore()
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TVContentView()
                 .environmentObject(store)
         }
     }

@@ -1,0 +1,26 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git *)",
+      "Bash(swift build *)",
+      "Bash(xcodebuild -project Luminplay.xcodeproj -scheme Luminplay -destination 'platform=macOS' build)",
+      "Bash(grep -n 'LuminplayUITests \\\\*/,$' /Volumes/Stockpile/200-Code/Luminplay/Luminplay.xcodeproj/project.pbxproj)",
+      "Bash(grep *)",
+      "Bash(xcodebuild -project Luminplay.xcodeproj -scheme LuminplayTV -destination 'platform=tvOS Simulator,name=Apple TV' build)",
+      "Bash(killall xcodebuild *)",
+      "Bash(xcodebuild -project /Volumes/Stockpile/200-Code/Luminplay/Luminplay.xcodeproj -scheme LuminplayTV -destination 'platform=tvOS Simulator,name=Apple TV' build)",
+      "Bash(pkill -9 xcodebuild)",
+      "Bash(pkill -9 -f Xcode)",
+      "Bash(rm -rf /Users/rayanceking/Library/Developer/Xcode/DerivedData/Luminplay-*)",
+      "Bash(xcodebuild -project /Volumes/Stockpile/200-Code/Luminplay/Luminplay.xcodeproj -scheme Luminplay -destination 'platform=macOS' build)",
+      "Bash(xcodebuild -project /Volumes/Stockpile/200-Code/Luminplay/Luminplay.xcodeproj -scheme LuminplayWatch -destination 'platform=watchOS Simulator,name=Apple Watch Series 10' build)",
+      "Bash(plutil *)",
+      "Bash(xcodebuild -list -project Luminplay.xcodeproj)",
+      "Bash(python3 *)",
+      "Bash(xcodebuild -project /Volumes/Stockpile/200-Code/Luminplay/Luminplay.xcodeproj -scheme LuminplayWatch -showdestinations)",
+      "Bash(xcodebuild -project /Volumes/Stockpile/200-Code/Luminplay/Luminplay.xcodeproj -scheme LuminplayWatch -destination 'platform=watchOS Simulator,name=Apple Watch Ultra 3' build)",
+      "Bash(xcodebuild -project /Volumes/Stockpile/200-Code/Luminplay/Luminplay.xcodeproj -scheme LuminplayWatch -destination 'platform=watchOS Simulator,id=10DF58A6-65BE-4408-A322-3C48647C120B' build)",
+      "Bash(xcodebuild -project /Volumes/Stockpile/200-Code/Luminplay/Luminplay.xcodeproj -scheme LuminplayTV -destination 'platform=tvOS Simulator,id=B2C3D4E5A0010001' build)"
+    ]
+  }
+}
